@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
@@ -8,14 +9,35 @@ const Hero = (props) => (
   <Section row nopadding>
     <LeftSection>
       <SectionTitle main center>
-        Welcome To <br />
-        My Personal Portfolio
+        Hey there! <br />
+        I&apos;m Emmanuel
       </SectionTitle>
-      <SectionText>
-        Web Developer, Technical Writer, Brother, Son and so on. 
+      <SectionText hero>
+        <ul>
+          <li>
+            Frontend Developer
+          </li>  
+          <li>
+            Technical Writer
+          </li>  
+          <li>
+            Open Source Enthusiast
+          </li>  
+        </ul> 
       </SectionText>
-      <Button onClick={() => window.location = 'https://google.com'}>Learn More</Button>
+      <Button>
+        <a 
+          href='/files/myResume.pdf'
+          target='_blank'
+          rel='noopener noreferrer'
+          download
+          style={{color: '#fff'}}
+          >
+        My Resume
+        </a>
+        </Button>
     </LeftSection>
+    
   </Section>
 );
 
