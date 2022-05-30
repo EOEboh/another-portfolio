@@ -14,7 +14,7 @@ return (
    <Div1> 
      <Link href='/'>
        <a style={{display: 'flex', alignItems: 'center', color: 'white'}}>
-         <Span>Home</Span>
+         <Span>Welcome🙂</Span>
        </a>
      </Link>
    </Div1>
