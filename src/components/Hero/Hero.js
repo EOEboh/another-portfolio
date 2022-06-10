@@ -27,7 +27,7 @@ const Hero = (props) => (
       </SectionText>
       <Button>
         <a 
-          href='/files/myResume.pdf'
+          href='/files/Emmanuel_Eboh.pdf'
           target='_blank'
           rel='noopener noreferrer'
           download

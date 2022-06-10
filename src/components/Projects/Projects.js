@@ -65,7 +65,7 @@ return (
       ))}
     </GridContainer>
 
-    <SectionTitle main>Latset Writing Projects</SectionTitle>
+    <SectionTitle main>Latest Blogs</SectionTitle>
     <GridContainer>
       {data.user.publication.posts?.map((post, i) => (
         <BlogCard key={i}>
