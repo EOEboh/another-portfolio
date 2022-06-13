@@ -1,4 +1,5 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
 import { SiHashnode } from 'react-icons/si';
 import { SectionText } from '../../styles/GlobalComponents';
@@ -8,9 +9,14 @@ import { SocialIcons } from '../Header/HeaderStyles';
 import { CompanyContainer, FooterWrapper, LinkColumn, LinkItem, LinkList, LinkTitle, Slogan, SocialContainer, SocialIconsContainer } from './FooterStyles';
 
 const Footer = () => {
+
+  useEffect(()=> {
+    AOS.init({ duration: 2500});
+    AOS.refresh();
+  }, []);
   return (
     <FooterWrapper>
-      <LinkList>
+      <LinkList data-aos='zoom-in'>
         <LinkColumn>
           <LinkTitle>
             Call
@@ -24,7 +30,7 @@ const Footer = () => {
           <LinkItem href='mailto:ecolejnr007@gmail.com'>ecolejnr007@gmail.com</LinkItem>
         </LinkColumn>
       </LinkList>
-      <SocialIconsContainer>
+      <SocialIconsContainer data-aos='zoom-in-up'>
         <CompanyContainer>
           <Slogan>Never Stop Being Better Than Yesterday!</Slogan>
         </CompanyContainer>
@@ -40,7 +46,7 @@ const Footer = () => {
      </SocialIcons>
      </SocialContainer>
       </SocialIconsContainer>
-      <SectionText> Emmanuel Eboh &copy; {new Date().getFullYear()}</SectionText>
+      <SectionText data-aos='zoom-in-down'> Emmanuel Eboh &copy; {new Date().getFullYear()}</SectionText>
     </FooterWrapper>
   );
 };

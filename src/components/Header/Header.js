@@ -31,7 +31,12 @@ return (
      </li>
      <li>
        <Link href='#about'>
-         <NavLink>About Me</NavLink>
+         <NavLink>About</NavLink>
+       </Link>
+     </li>
+     <li>
+       <Link href='#contact'>
+         <NavLink>Contact</NavLink>
        </Link>
      </li>
    </Div2>

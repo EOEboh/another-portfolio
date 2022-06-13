@@ -13,14 +13,14 @@ const Skills = () => {
 
 
 return (
-  <Section id='tech'>
+  <Section id='skills'>
     <SectionDivider />
     <br />
     <SectionTitle data-aos='fade-right'>
       My Skills and Technologies
     </SectionTitle>
     <SectionText data-aos='zoom-in-up'>
-      I am a Frontend Engineer with over 2 years experience working with different technologies, bringing solutions to the web.
+      I am a Frontend Engineer with over { new Date().getFullYear() - 2020} experience working with different technologies, bringing solutions to the web.
     </SectionText>
     <List>
       <ListItem data-aos='fade-right'>

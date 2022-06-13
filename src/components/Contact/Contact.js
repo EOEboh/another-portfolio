@@ -4,7 +4,7 @@ import Form from '../Form';
 
 const Contact = () => {
   return (
-    <Section> 
+    <Section id='contact'> 
       <SectionDivider />
       <br />
         <SectionTitle>
