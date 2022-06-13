@@ -3,8 +3,7 @@ import styled from 'styled-components';
 export const Container = styled.form`
     display: flex;
     flex-direction: column;
-    align-items: center;
-    margin: 1rem;
+    margin: 1rem;    
 `
 export const Input = styled.input`
     padding: 2rem;
