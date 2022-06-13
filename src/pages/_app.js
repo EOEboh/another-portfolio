@@ -1,5 +1,6 @@
 import Theme from '../styles/theme';
 import {  QueryClient, QueryClientProvider, useQuery } from 'react-query';
+import 'aos/dist/aos.css';
 
 const queryClient = new QueryClient();
 

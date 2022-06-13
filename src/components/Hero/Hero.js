@@ -1,18 +1,23 @@
-import React from 'react';
-
-
+import React, { useEffect } from 'react';
 import { Section, SectionText, SectionTitle } from '../../styles/GlobalComponents';
 import Button from '../../styles/GlobalComponents/Button';
 import { LeftSection } from './HeroStyles';
+import AOS from 'aos';
 
-const Hero = (props) => (
-  <Section row nopadding>
+const Hero = () => {
+  useEffect(()=> {
+    AOS.init({ duration: 2500});
+    AOS.refresh();
+  }, []);
+
+  return (
+  <Section  nopadding>
     <LeftSection>
-      <SectionTitle main center>
+      <SectionTitle main center data-aos='fade-right'>
         Hey there! <br />
-        I&apos;m Emmanuel
+        I&apos;m <br />Emmanuel
       </SectionTitle>
-      <SectionText hero>
+      <SectionText hero data-aos='fade-left'>
         <ul>
           <li>
             Frontend Developer
@@ -25,7 +30,9 @@ const Hero = (props) => (
           </li>  
         </ul> 
       </SectionText>
-      <Button>
+     
+    </LeftSection>
+    <Button>
         <a 
           href='/files/Emmanuel_Eboh.pdf'
           target='_blank'
@@ -35,10 +42,8 @@ const Hero = (props) => (
           >
         My Resume
         </a>
-        </Button>
-    </LeftSection>
-    
+    </Button>
   </Section>
-);
+);}
 
 export default Hero;

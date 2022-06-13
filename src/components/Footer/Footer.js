@@ -1,5 +1,7 @@
 import React from 'react';
-import { AiFillGithub, AiFillInstagram, AiFillLinkedin } from 'react-icons/ai';
+import { AiFillGithub, AiFillLinkedin } from 'react-icons/ai';
+import { SiHashnode } from 'react-icons/si';
+import { SectionText } from '../../styles/GlobalComponents';
 
 import { SocialIcons } from '../Header/HeaderStyles';
 // import { ListItem } from '../Skills/SkillStyles';
@@ -13,7 +15,7 @@ const Footer = () => {
           <LinkTitle>
             Call
           </LinkTitle>
-          <LinkItem href='tel:911:911:911'>000000</LinkItem>
+          <LinkItem href='tel:+2348140165937'>+2348140165937</LinkItem>
         </LinkColumn>
         <LinkColumn>
           <LinkTitle>
@@ -24,20 +26,21 @@ const Footer = () => {
       </LinkList>
       <SocialIconsContainer>
         <CompanyContainer>
-          <Slogan>Innovator meehn</Slogan>
+          <Slogan>Never Stop Being Better Than Yesterday!</Slogan>
         </CompanyContainer>
         <SocialContainer> 
-        <SocialIcons href='https://github.com'>
+        <SocialIcons href='https://github.com/EOEboh' target='_blank'>
        <AiFillGithub size='3rem' />
      </SocialIcons>
-     <SocialIcons href='https://linkedin.com'>
+     <SocialIcons href='https://www.linkedin.com/in/emmanuel-o-eboh-51b740194?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BFyG8vauYRfqI7Kv3VI5i7w%3D%3D' target='_blank'>
        <AiFillLinkedin size='3rem' />
      </SocialIcons>
-     <SocialIcons href='https://instagram.com'>
-       <AiFillInstagram size='3rem' />
+     <SocialIcons href='https://captain-eo.hashnode.dev/' target='_blank'>
+       <SiHashnode size='3rem' />
      </SocialIcons>
      </SocialContainer>
       </SocialIconsContainer>
+      <SectionText> Emmanuel Eboh &copy; {new Date().getFullYear()}</SectionText>
     </FooterWrapper>
   );
 };

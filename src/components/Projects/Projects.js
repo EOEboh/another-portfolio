@@ -1,5 +1,5 @@
-import React from 'react';
-
+import React, { useEffect } from 'react';
+import AOS from 'aos';
 import { BlogCard, CardInfo, ExternalLinks, GridContainer, HeaderThree, Hr, Tag, TagList, TitleContent, UtilityList, Img } from './ProjectsStyles';
 import { Section, SectionDivider, SectionTitle } from '../../styles/GlobalComponents';
 import { projects } from '../../constants/constants';
@@ -25,6 +25,10 @@ const ARTICLE_QUERY = `
 `;
 
 const Projects = () => {
+  useEffect(()=> {
+    AOS.init({ duration: 2500});
+    AOS.refresh();
+  }, []);
 
   const { data, isLoading, error } = useQuery("launches", () => {
     return axios({
@@ -43,10 +47,10 @@ const Projects = () => {
 return (
   <Section nopadding  id='projects'>
     <SectionDivider />
-    <SectionTitle main>Latest Software Projects</SectionTitle>
+    <SectionTitle main data-aos='fade-right'>Latest Software Projects</SectionTitle>
     <GridContainer>
       {projects.map(({title, description, id, image,tags,source, visit}) => (
-        <BlogCard key={id}>
+        <BlogCard key={id} data-aos="zoom-in-up">
           <Img src={image} />
           <TitleContent>
             <HeaderThree title>
@@ -65,10 +69,10 @@ return (
       ))}
     </GridContainer>
 
-    <SectionTitle main>Latest Blogs</SectionTitle>
+    <SectionTitle main data-aos='fade-right'>Latest Blogs</SectionTitle>
     <GridContainer>
       {data.user.publication.posts?.map((post, i) => (
-        <BlogCard key={i}>
+        <BlogCard key={i} data-aos='zoom-in-up'>
           <Img src={`${post.coverImage}`} />
           <TitleContent>
             <HeaderThree title>
