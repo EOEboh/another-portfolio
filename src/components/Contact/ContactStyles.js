@@ -17,5 +17,6 @@ export const Label = styled.label`
 `
 export const Text = styled.textarea`
     margin-bottom: 2rem;
-    background-color: #ffffff
+    background-color: #ffffff;
+    border: none
 `
