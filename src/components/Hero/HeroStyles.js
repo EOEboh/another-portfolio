@@ -12,7 +12,6 @@ export const LeftSection = styled.div`
 
   &:before{
     content: "";
-    background-image: url('/images/me.jpg');
     background-size: contain;
     background-repeat: no-repeat;
     position: absolute;
