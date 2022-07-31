@@ -40,7 +40,10 @@ const Projects = () => {
     }).then(response => response.data.data);
   });
 
-  if (isLoading) return 'Articles loading...';
+  if (isLoading){ 
+    return <div style={{ textAlign: 'center', color: 'yellow'}}> <h2>  <b>Articles loading...</b></h2> </div>
+  };
+  
   if(error) return <pre>{error.message}</pre>;
 
 
