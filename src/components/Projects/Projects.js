@@ -49,7 +49,7 @@ return (
     <SectionDivider />
     <SectionTitle main data-aos='fade-right'>Latest Software Projects</SectionTitle>
     <GridContainer>
-      {projects.map(({title, description, id, image,tags,source, visit}) => (
+      {projects.map(({title, description, id, image,source, visit}) => (
         <BlogCard key={id} data-aos="zoom-in-up">
           <Img src={image} />
           <TitleContent>
@@ -62,7 +62,7 @@ return (
               {description}
             </CardInfo>
           <UtilityList>
-            <ExternalLinks href={visit}>Code</ExternalLinks>
+            <ExternalLinks href={visit}>Visit</ExternalLinks>
             <ExternalLinks href={source}>Source</ExternalLinks>
           </UtilityList>
         </BlogCard>
