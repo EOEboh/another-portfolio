@@ -15,11 +15,11 @@ const Timeline = () => {
     <SectionDivider />
     <br />
      <SectionTitle data-aos='fade-right'>About Me</SectionTitle>
-     <SectionText data-aos='zoom-in-up'> A Frontend Software Engineer with a talent for solving problems, making in-depth research and writing neat code.  
-     <p> I am that guy you would want in your team, because the value I bring to teamwork is like bread to butter.</p> 
-     <p>
-      I write technical articles and documentations of different technologies and industry trends. Check out my blog below.
-     </p>
+     <SectionText data-aos='zoom-in-up'>  A frontend software developer with an extra superpower— technical writing.
+
+Whether I'm writing React or fiddling with AWS or solving algorithms in JavaScript, my main objective is always the same, which is to create clean, understandable content that solves problems.
+
+<p>When not coding or writing, I'm most likely watching a documentary, playing basketball or simply wondering if there's a slight chance the earth is flat.</p>
      </SectionText>
 
    </Section>
