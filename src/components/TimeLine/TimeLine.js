@@ -15,7 +15,7 @@ const Timeline = () => {
     <SectionDivider />
     <br />
      <SectionTitle data-aos='fade-right'>About Me</SectionTitle>
-     <SectionText data-aos='zoom-in-up'>  A frontend software developer with an extra superpower— technical writing.
+     <SectionText data-aos='zoom-in-up'>  A frontend software developer with an extra superpower— technical writing.<br/>
 
 Whether I'm writing React or fiddling with AWS or solving algorithms in JavaScript, my main objective is always the same, which is to create clean, understandable content that solves problems.
 
